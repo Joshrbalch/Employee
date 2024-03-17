@@ -1,8 +1,6 @@
 #ifndef _EMPLOYEE_H
 #define _EMPLOYEE_H
 
-#include <string>
-
 class Employee {
 public:
    Employee(const std::string&, const std::string&);

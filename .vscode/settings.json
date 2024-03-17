@@ -48,5 +48,6 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "C_Cpp.default.compilerPath": "c:\\cygwin64\\bin\\gcc.exe"
 }

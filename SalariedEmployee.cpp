@@ -1,13 +1,7 @@
-#include "Employee.h"
-#include <string>
 #include <iostream>
+#include <string>
+#include "SalariedEmployee.h"
 
-using namespace std;
-
-class SalariedEmployee : public Employee {
-    public:
-        SalariedEmployee(const string& first, const string& last, double salary);
-        void setSalary(double salary);
-        double getSalary() const;
-        string getInfo() const;
-};
+SalariedEmployee::SalariedEmployee(const std::string &first, const std::string &last, const std::string &ssn, double salary) : Employee(first, last, ssn) {
+    setWeeklySalary(salary);
+}
