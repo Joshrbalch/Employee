@@ -5,9 +5,12 @@ CommissionEmployee::CommissionEmployee(const std::string& firstName, const std::
 
 double CommissionEmployee::getEarning() const {
     double earning = salesAmount * commissionRate;
-    return (earning > minimalWeeklyPay) ? earning : minimalWeeklyPay; // Ensure minimal weekly pay
+    if(earning < minimalWeeklyPay) // If earning is less than minimal weekly pay
+        return minimalWeeklyPay; // Return minimal weekly pay
+    else
+        return earning; // Return earning
 }
 
 std::string CommissionEmployee::getInfo() const {
-    return "Commission Employee: " + getFirstName() + " " + getLastName(); // Return employee's full name
+    return "Commission Employee: " + getFirstName() + " " + getLastName() + "\nminimum salary: " + to_string(minimalWeeklyPay) + ", sales amount: " + to_string(salesAmount) + ", commission rate: " + to_string(commissionRate) + "%"; // Return employee's full name
 }

@@ -32,7 +32,8 @@ void readCommission(vector<Employee*> *employees, string line) {
 void readHourly(vector<Employee*> *employees, string line) {
     stringstream ss(line);
     string firstName, lastName, type;
-    int hours, wage;
+    int hours;
+    double wage;
     ss >> type >> firstName >> lastName >> hours >> wage;
     HourlyEmployee *employee = new HourlyEmployee(firstName, lastName, hours, wage);
     employees->push_back(employee);
