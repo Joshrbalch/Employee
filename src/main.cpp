@@ -7,6 +7,9 @@
 
 #include "reading.h"
 #include "Employee.h"
+#include "HourlyEmployee.h"
+#include "SalariedEmployee.h"
+#include "CommissionEmployee.h"
 
 using namespace std;
 
@@ -76,12 +79,13 @@ int main(int argc, char *argv[])
         stringstream str_stream(s);
         str_stream >> threshold;
 	}
+
 	int count=countEmployees(employees, op, threshold);
+
 	if (count==0) {
 		cout << "There are no employees satisfied the specified condition." << endl;
 		return 3;
 	}
-		
 
 	{
 		string action(argv[2]);

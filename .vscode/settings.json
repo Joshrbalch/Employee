@@ -49,5 +49,5 @@
         "streambuf": "cpp",
         "typeinfo": "cpp"
     },
-    "C_Cpp.default.compilerPath": "c:\\cygwin64\\bin\\gcc.exe"
+    "C_Cpp.default.compilerPath": "c:\\MinGW\\bin\\g++.exe"
 }
