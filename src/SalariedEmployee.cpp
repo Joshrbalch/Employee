@@ -8,6 +8,7 @@ double SalariedEmployee::getEarning() const {
 }
 
 std::string SalariedEmployee::getInfo() const {
+    // Return employee's full name and weekly salary
     return "Salaried Employee: " + getFirstName() + " " + getLastName() + "\nweekly salary: " + to_string(weeklySalary); // Return employee's full name
 }
 

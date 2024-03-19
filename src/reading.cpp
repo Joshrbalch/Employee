@@ -25,7 +25,7 @@ void readCommission(vector<Employee*> *employees, string line) {
     int minPay, sales;
     double commissionRate;
     ss >> type >> firstName >> lastName >> minPay >> sales >> commissionRate;
-    CommissionEmployee *employee = new CommissionEmployee(firstName, lastName, minPay, sales, commissionRate);
+    CommissionEmployee *employee = new CommissionEmployee(firstName, lastName, sales, commissionRate, minPay);
     employees->push_back(employee);
 }
 

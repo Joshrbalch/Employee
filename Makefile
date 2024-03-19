@@ -14,7 +14,7 @@ OBJECTS = $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SOURCES))
 all: $(BINDIR)/$(TARGET)
 
 $(BINDIR)/$(TARGET): $(OBJECTS) | $(BINDIR)
-	$(CXX) $(CXXFLAGS) $^ -o $@ -I$(INCDIR)
+	$(CXX) $(CXXFLAGS) $^ -o $@
 
 $(OBJECTS): $(OBJDIR)/%.o : $(SRCDIR)/%.cpp | $(OBJDIR)
 	$(CXX) $(CXXFLAGS) -c $< -o $@ -I$(INCDIR)
