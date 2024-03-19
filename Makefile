@@ -1,8 +1,8 @@
 CXX = g++
 CXXFLAGS = -std=c++11 -Wall -Wextra
-TARGET = program.exe
-SRCDIR = src
-INCDIR = include
+TARGET = program
+SRCDIR = .
+INCDIR = .
 OBJDIR = obj
 BINDIR = bin
 
@@ -14,7 +14,7 @@ OBJECTS = $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SOURCES))
 all: $(BINDIR)/$(TARGET)
 
 $(BINDIR)/$(TARGET): $(OBJECTS) | $(BINDIR)
-	$(CXX) $(CXXFLAGS) $^ -o $@
+	$(CXX) $(CXXFLAGS) $^ -o $@ -lstdc++
 
 $(OBJECTS): $(OBJDIR)/%.o : $(SRCDIR)/%.cpp | $(OBJDIR)
 	$(CXX) $(CXXFLAGS) -c $< -o $@ -I$(INCDIR)

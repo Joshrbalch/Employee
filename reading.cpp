@@ -1,5 +1,4 @@
-#include "reading.h"
-#include "employee.h"
+#include "Employee.h"
 #include "SalariedEmployee.h"
 #include "CommissionEmployee.h"
 #include "HourlyEmployee.h"
@@ -7,6 +6,7 @@
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <vector>
 
 using namespace std;
 
