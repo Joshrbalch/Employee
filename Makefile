@@ -4,7 +4,7 @@ TARGET = program
 SRCDIR = .
 INCDIR = .
 OBJDIR = obj
-BINDIR = bin
+BINDIR = .
 
 SOURCES = $(wildcard $(SRCDIR)/*.cpp)
 OBJECTS = $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SOURCES))
