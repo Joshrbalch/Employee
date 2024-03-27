@@ -1,6 +1,6 @@
 CXX = g++
 CXXFLAGS = -std=c++11 -Wall -Wextra
-TARGET = program
+TARGET = a
 SRCDIR = .
 INCDIR = .
 OBJDIR = obj
